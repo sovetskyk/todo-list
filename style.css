@@ -4,8 +4,31 @@
     box-sizing: border-box;
 }
 
+@media (min-width: 400px) and (max-width: 800px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .todo-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+}
+
 html {
-    background-image: url(https://krot.info/uploads/posts/2020-10/1603989286_32-p-fon-myataya-chernaya-bumaga-67.jpg);
+    background-image: url(paper.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -60,7 +83,7 @@ form button:hover {
 }
 
 .todo-list {
-    min-width: 30%;
+    min-width: 50%;
     list-style: none;
 }
 
