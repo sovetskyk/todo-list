@@ -4,29 +4,6 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .todo-input {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-    }
-}
-
 html {
     background-image: url(paper.jpeg);
     background-repeat: no-repeat;
@@ -169,4 +146,27 @@ select {
     cursor: pointer;
     pointer-events: none;
     transition: all 0.3s ease;
+}
+
+@media (max-width: 800px) {
+    /* body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } */
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .todo-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
 }
